@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <vector>
+#include <array>
 
 using namespace std;
 
@@ -16,7 +17,18 @@ double addUp(double n1, double n2){
     return n1 + n2;
 }
 
-//Exercise 02
+//Exercise 06
+int addUpArray(int a[]){
+    
+    int total = 0;
+    
+    for (int i = 0; i < sizeof(a); i++){
+        total += a[i];
+    }
+    
+    return total;
+    
+}
 
 
 int main() {
@@ -33,8 +45,10 @@ int main() {
     cout << "The answer is: " << addUp(number01, number02) << endl;
     
     
-    //Exercise 02
+    //Exercise 06
+    int array01[] = {1, 23, 32, 43, 54, 234};
     
+    cout << "Total array value: " << addUpArray(array01) << endl;
 
     return 0;
 }
