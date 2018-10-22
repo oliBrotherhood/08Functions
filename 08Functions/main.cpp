@@ -7,9 +7,34 @@
 //
 
 #include <iostream>
+#include <vector>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+//Exercise 01
+double addUp(double n1, double n2){
+    return n1 + n2;
+}
+
+//Exercise 02
+
+
+int main() {
+    
+    //Exercise 01
+    double number01, number02;
+    
+    cout << "Enter the first Number ";
+    cin >> number01;
+    
+    cout << "\nEnter the second number ";
+    cin >> number02;
+    
+    cout << "The answer is: " << addUp(number01, number02) << endl;
+    
+    
+    //Exercise 02
+    
+
     return 0;
 }
