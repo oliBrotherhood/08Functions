@@ -18,11 +18,11 @@ double addUp(double n1, double n2){
 }
 
 //Exercise 06
-int addUpArray(int a[]){
+int addUpArray(int a[5]){
     
     int total = 0;
     
-    for (int i = 0; i < sizeof(a); i++){
+    for (int i = 0; i < 6; i++){
         total += a[i];
     }
     
